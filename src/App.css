@@ -132,7 +132,8 @@ ol{
 
 .Home{
   color: white;
-  position: absolute;
+  font-size: 40px;
+  font-weight: bold;
 
 }
 
@@ -146,3 +147,25 @@ footer{
   color: white;  
 }
 
+
+.resume{
+  text-decoration: none;
+  color: white;
+}
+
+.resume:hover {
+  color: rgb(240, 178, 178);
+  cursor: pointer;
+}
+
+.about-me-container{
+  justify-content: center;
+  text-align: center;
+  width: 430px;
+}
+
+.about-me{
+  color: white;
+  display: block;
+  font-size: 25px;
+}

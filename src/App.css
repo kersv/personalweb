@@ -2,23 +2,27 @@
   border-style: solid;
   margin: 20px;
   width: 97%;
-  height: 95vh;
+  height: 95%;
   position: absolute;
-  left: 5px;
+  top: 3px;
+  left: 6px;
   border-width: 1px;
   background-color: rgb(0, 0, 0);
-  border-color: rgb(77, 77, 77);
+  border-color: rgb(172, 163, 163);
+  display: flex;
 }
 
 .App-header{
   color: white;
+  flex: 1;
+  /* border: 1px solid rgb(255, 0, 0); */
 }
 
 .name{
   font-family: 'Quicksand', sans-serif;
   color: White;
   font-weight: 300;
-  font-size: 80px;
+  font-size: 60px;
   margin: 0;
   padding: 10px 20px 10px 20px;
 }
@@ -38,12 +42,104 @@ ol{
   list-style-type: none;
 }
 
-.nav-links{
-  padding-top: 10px;
+.nav-links, a{
+  padding-top: 20px;
   font-size: 20px;
 }
 
-.nav-links:hover{
-  color: rgb(87, 87, 87);
+.nav-links:hover a{
+  color: rgb(240, 178, 178);
   cursor: pointer;
 }
+
+.content{
+  flex:4;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: auto;
+  width: 90vw;
+}
+.line {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+.line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+  -webkit-animation: drop 7s 0s infinite;
+          animation: drop 7s 0s infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+          animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+.line:nth-child(1) {
+  margin-left: -25%;
+}
+.line:nth-child(1)::after {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.line:nth-child(3) {
+  margin-left: 25%;
+}
+.line:nth-child(3)::after {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+@-webkit-keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+
+@keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+
+.Home{
+  color: white;
+}
+
+footer{
+  margin-top: 500px;
+  padding-left: 24px;
+  display: flex;
+}
+
+.copyright{
+  color: white;  
+}
+

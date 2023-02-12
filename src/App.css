@@ -54,6 +54,7 @@ ol{
 
 .content{
   flex:4;
+  position: relative;
   /* border: 1px solid blue; */
   display: flex;
   justify-content: center;
@@ -131,6 +132,8 @@ ol{
 
 .Home{
   color: white;
+  position: absolute;
+
 }
 
 footer{

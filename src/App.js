@@ -3,11 +3,15 @@ import Home from './Components/Home';
 import About from './Components/About';
 import Contact from './Components/Contact';
 import Projects from './Components/Projects';
+import React,{useState} from 'react';
 
-function App() {
+const App = () => {
+
+  const [page, setPage] = useState(0);
   
-  const contentDisplay = () => {
+  const contentDisplay = (num) => {
     console.log('DISPLAY CONTENT')
+    setPage(num);
   };
 
   return (
@@ -27,16 +31,16 @@ function App() {
           <p className='job-title'>Web Developer</p>
           <nav className='nav-panel'>
             <ol>
-              <li className='nav-links' onClick={contentDisplay}>
+              <li className='nav-links' onClick={()=> contentDisplay(0)}  >
                 <a>Home</a>
               </li>
-              <li className='nav-links' onClick={contentDisplay}>
+              <li className='nav-links' onClick={()=> contentDisplay(1)}>
                 <a>About</a>
               </li>
-              <li className='nav-links' onClick={contentDisplay}>
+              <li className='nav-links' onClick={()=> contentDisplay(2)}>
                 <a>Projects</a>
               </li>
-              <li className='nav-links' onClick={contentDisplay}>
+              <li className='nav-links' onClick={()=> contentDisplay(3)}>
                 <a>Contact</a>
               </li>
             </ol>
@@ -52,10 +56,14 @@ function App() {
 
         {/* DISPLAY CONTENT */}
         <div className='content'>
-            <Home/>
-            <Projects/>
+          {(page === 0)?<Home/>: ''}
+          {(page === 1)?<About/>: ''}
+          {(page === 2)?<Projects/>: ''}
+          {(page === 3)?<Contact/>: ''}
+            {/* <Home/>
             <About/>
-            <Contact/>
+            <Projects/>
+            <Contact/> */}
 
         </div>
       </div>

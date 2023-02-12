@@ -3,7 +3,7 @@ import Home from './Components/Home';
 import About from './Components/About';
 import Contact from './Components/Contact';
 import Projects from './Components/Projects';
-import React,{useState, useRef} from 'react';
+import React,{useState} from 'react';
 import Resume from './Components/Images/Resume.pdf'
 
 const App = () => {
@@ -11,14 +11,8 @@ const App = () => {
   const [page, setPage] = useState(0);
   
   const contentDisplay = (num) => {
-    console.log('DISPLAY CONTENT')
     setPage(num);
   };
-
-  const scrollContainer = useRef(null);
-  const handleScroll = () => {
-    console.log(scrollContainer.current.scrollTop)
-  } 
 
   return (
     <div className="App">
@@ -58,15 +52,11 @@ const App = () => {
         </header>
 
         {/* DISPLAY CONTENT */}
-        <div className='content'  ref={scrollContainer} onScroll={handleScroll}>
+        <div className='content'  >
           {(page === 0)?<Home/>: ''}
           {(page === 1)?<About/>: ''}
           {(page === 2)?<Projects/>: ''}
           {(page === 3)?<Contact/>: ''}
-            {/* <Home/>
-            <About/>
-            <Projects/>
-            <Contact/> */}
 
         </div>
       </div>

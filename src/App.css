@@ -42,12 +42,12 @@ ol{
   list-style-type: none;
 }
 
-.nav-links, a{
+.nav-links{
   padding-top: 20px;
   font-size: 20px;
 }
 
-.nav-links:hover a{
+.nav-links:hover {
   color: rgb(240, 178, 178);
   cursor: pointer;
 }
@@ -137,12 +137,12 @@ ol{
 }
 
 footer{
-  margin-top: 500px;
-  padding-left: 24px;
-  display: flex;
+  position: absolute;
+  bottom: 0;
 }
 
 .copyright{
+  padding-left: 24px;
   color: white;  
 }
 

@@ -31,27 +31,21 @@ const App = () => {
           <p className='job-title'>Web Developer</p>
           <nav className='nav-panel'>
             <ol>
-              <li className='nav-links' onClick={()=> contentDisplay(0)}  >
-                <a>Home</a>
+              <li className='nav-links' onClick={()=> contentDisplay(0)}>
+                Home
               </li>
               <li className='nav-links' onClick={()=> contentDisplay(1)}>
-                <a>About</a>
+                About
               </li>
               <li className='nav-links' onClick={()=> contentDisplay(2)}>
-                <a>Projects</a>
+                Projects
               </li>
               <li className='nav-links' onClick={()=> contentDisplay(3)}>
-                <a>Contact</a>
+                Contact
               </li>
             </ol>
           </nav>
 
-          {/* COPYRIGHT */}
-          <footer>
-            <p className='copyright'>
-              Copyright &copy; 2023 Kevin Xie. All rights are resevered.
-            </p>
-          </footer>
         </header>
 
         {/* DISPLAY CONTENT */}
@@ -67,8 +61,13 @@ const App = () => {
 
         </div>
       </div>
-      
-        
+        {/* COPYRIGHT */}
+        <footer>
+          <div className='copyright'>
+            Copyright &copy; 2023 Kevin Xie. All rights are resevered.
+          </div>
+        </footer>
+
     </div>
   );
 }

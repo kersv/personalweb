@@ -16,7 +16,7 @@ const TvGuidance = () => {
   };
 
   return(
-    <div>
+    <div className="individual-project">
       <Slider {...settings} className="slider">
         <img className='ProjImg' src="https://assets2.rockpapershotgun.com/codenames.jpg/BROK/resize/1920x1920%3E/format/jpg/quality/80/codenames.jpg" alt="CodenamesPhoto"></img>
         <img className='ProjImg' src="https://www.commonsensemedia.org/sites/default/files/styles/ratio_16_9_small/public/screenshots/csm-website/codenamesonline2.jpg" alt="CodenamesPhoto"></img>

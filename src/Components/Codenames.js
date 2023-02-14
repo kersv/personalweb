@@ -17,7 +17,7 @@ const Codenames = () => {
   };
 
   return(
-    <div>
+    <div className="individual-project">
       <Slider {...settings} className="slider">
         <img className='ProjImg' src={Codename1} alt="CodenamesPhoto"></img>
         <img className='ProjImg' src="https://i.imgur.com/L2Ee3Hb.png" alt="CodenamesPhoto"></img>

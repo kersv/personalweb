@@ -29,14 +29,15 @@
 }
 
 .job-title{
-  padding-left: 24px;
+  padding-left: 20px;
   margin: 0;
   font-size: 26px;
 }
 
+
 .nav-panel{
   padding: 20px;
-  padding-left: 24px;
+  padding-left: 20px;
 }
 
 ol{
@@ -147,7 +148,6 @@ footer{
   color: white;  
 }
 
-
 .resume{
   text-decoration: none;
   color: white;
@@ -159,6 +159,8 @@ footer{
 }
 
 .about-me-container{
+  display: flex;
+  flex-direction: column;
   text-align: center;
   width: 490px;
   position: relative;
@@ -176,7 +178,6 @@ footer{
 
 .skills-container{
   color: white;
-  position: absolute;
   padding: 20px;
 }
 
@@ -212,7 +213,6 @@ footer{
   text-align: right;
 }
 .project-name{
-  
   font-size: 20px;
 }
 
@@ -226,9 +226,9 @@ footer{
 }
 
 .slider{
-  width: 900px;
+  width: 760px;
   height: 550px;
-  margin-right: 200px;
+  margin-right: 20px;
 }
 
 .ProjImg{
@@ -278,3 +278,97 @@ footer{
 .contact:hover{
   color: rgb(247, 109, 121);
 }
+
+@media screen and (max-width: 646px) {
+  
+  .borderbox{
+    flex-direction: column;
+    border: none;
+    top: 0;
+    left: 0;
+    margin: 0;
+    /* border: 1px solid blue; */
+  }
+  .App-header{
+    /* border: 2px solid white; */
+  }
+  .Home{
+    font-size: 20px;
+  }
+  .welcome-img{
+    width: 200px;
+    height: 150px;
+  }
+  ol{
+    display: flex;
+  }
+  .nav-panel{
+    padding-left: 7px;
+  }
+  .nav-links{
+    padding: 4px;
+  }
+  .copyright{
+    font-size: 13px;
+  }
+
+  .about-me-container{
+    width: 300px;
+  }
+
+  .about-me{
+    font-size: 15px ;
+  }
+  
+  .skill-icon{
+    width: 25px;
+    height: 25px;
+  }
+  .skill-icon:hover{
+    width: 30px;
+    height: 30px;
+  }
+
+ 
+  .project-list{
+    right: -10px;
+    top: -10px;
+  }
+
+  .project-name{
+    font-size: 15px;
+  }
+  .project-title{
+    font-size: 20px;
+  }
+  .individual-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .slider{
+    margin-top: 50px;
+    margin-left: 40px;
+    width: 300px;
+    height: 200px;
+  }
+  .tech-stack-icon{
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+
+  }
+  .project-desc{
+    font-size: 10px;
+    width: 300px;
+    
+  }
+  .project-github{
+    right: -10px;
+    bottom: -10px;
+    width: 30px;
+    height: 30px;
+  }
+
+}
+

@@ -231,6 +231,7 @@ footer{
 .ProjImg{
   border-radius: 4px;
   object-fit: cover;
+  height: 550px;
 }
 
 .tech-stack-icon{
@@ -319,6 +320,9 @@ footer{
     margin-left: 40px;
     width: 500px;
     height: 400px;
+  }
+  .ProjImg{
+    height: 350px;
   }
   .tech-stack-icon{
     padding: 10px;
@@ -413,6 +417,9 @@ footer{
     margin-top: 50px;
     margin-left: 40px;
     width: 300px;
+    height: 200px;
+  }
+  .ProjImg{
     height: 200px;
   }
   .tech-stack-icon{

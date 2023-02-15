@@ -3,6 +3,8 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Codename1 from './Images/Codenames.png'
+import Codename2 from './Images/Codenames1.png'
+import Codename3 from './Images/Codenames2.png'
 import {FaGithubAlt} from 'react-icons/fa'
 
 const Codenames = () => {
@@ -20,8 +22,8 @@ const Codenames = () => {
     <div className="individual-project">
       <Slider {...settings} className="slider">
         <img className='ProjImg' src={Codename1} alt="CodenamesPhoto"></img>
-        <img className='ProjImg' src="https://i.imgur.com/L2Ee3Hb.png" alt="CodenamesPhoto"></img>
-        <img className='ProjImg' src="https://i.imgur.com/8Icq7Q5.png" alt="CodenamesPhoto"></img>
+        <img className='ProjImg' src={Codename2} alt="CodenamesPhoto"></img>
+        <img className='ProjImg' src={Codename3} alt="CodenamesPhoto"></img>
       </Slider>
       <div className="tech-stack">
         <img className="tech-stack-icon" src='https://cdn-icons-png.flaticon.com/512/732/732212.png' alt="html"></img>

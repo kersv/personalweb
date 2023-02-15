@@ -13,6 +13,7 @@ const TvGuidance = () => {
     autoplaySpeed: 4000,
     cssEase: "linear",
     autoplay: true,
+    fade: true,
   };
 
   return(

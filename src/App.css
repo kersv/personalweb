@@ -276,9 +276,10 @@ footer{
   color: rgb(247, 109, 121);
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1500px) {
 
   .copyright{
+    color: red;
     font-size: 14px;
   }
 

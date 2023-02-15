@@ -24,16 +24,13 @@
   color: White;
   font-weight: 300;
   font-size: 60px;
-  margin: 0;
   padding: 10px 20px 10px 20px;
 }
 
 .job-title{
   padding-left: 20px;
-  margin: 0;
   font-size: 26px;
 }
-
 
 .nav-panel{
   padding: 20px;
@@ -279,6 +276,70 @@ footer{
   color: rgb(247, 109, 121);
 }
 
+@media screen and (max-width: 1700px) {
+
+  .copyright{
+    font-size: 14px;
+  }
+
+  .about-me-container{
+    width: 400px;
+  }
+
+  .about-me{
+    font-size: 18px ;
+  }
+  
+  .skill-icon{
+    width: 40px;
+    height: 40px;
+  }
+  .skill-icon:hover{
+    width: 50px;
+    height: 50px;
+  }
+
+  .project-list{
+    right: 15px;
+    top: 15px;
+  }
+
+  .project-name{
+    font-size: 20px;
+  }
+  .project-title{
+    font-size: 25px;
+  }
+  .individual-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .slider{
+    margin-top: 50px;
+    margin-left: 40px;
+    width: 500px;
+    height: 400px;
+  }
+  .tech-stack-icon{
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+
+  }
+  .project-desc{
+    font-size: 15px;
+    width: 500px;
+    
+  }
+  .project-github{
+    right: 5px;
+    bottom: 5px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
 @media screen and (max-width: 646px) {
   
   .borderbox{
@@ -287,6 +348,13 @@ footer{
     top: 0;
     left: 0;
     margin: 0;
+  }
+
+  .name{
+    font-size: 30px;
+  }
+  .job-title{
+    font-size: 13px;
   }
   .Home{
     font-size: 20px;
@@ -299,7 +367,7 @@ footer{
     display: flex;
   }
   .nav-panel{
-    padding-left: 7px;
+    padding-left: 2px;
   }
   .nav-links{
     padding: 4px;
@@ -327,8 +395,8 @@ footer{
 
  
   .project-list{
-    right: -10px;
-    top: -10px;
+    right: 1px;
+    top: 1px;
   }
 
   .project-name{
@@ -360,10 +428,12 @@ footer{
     
   }
   .project-github{
-    right: -10px;
+    right: 1px;
     bottom: -10px;
     width: 30px;
     height: 30px;
   }
 
 }
+
+

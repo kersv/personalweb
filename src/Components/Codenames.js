@@ -38,7 +38,7 @@ const Codenames = () => {
         <img className="tech-stack-icon" src='https://cdn-icons-png.flaticon.com/512/873/873120.png' alt="heroku"></img>
       </div>
       <div className="project-desc">
-        Codenames is a game of guessing which codenames (i.e., words) in a set are related to a hint-word given by another player. The game is played with least four players, or any even number of players. Players are split into two teams: blue and red.
+        Codenames is a capstone project that I worked on with 4 other members. This was my first experience learning React while developing reusable components for the frontend alongside other technologies such as Django for websockets, and axios for CRUD API calls.
       </div>
       <a href="https://github.com/amyghotra/codenames" target='_blank' rel="noreferrer">
         <FaGithubAlt className="project-github"/>

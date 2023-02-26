@@ -8,7 +8,7 @@ const About = () => {
         Hello!
       </div>
       <p className="about-me">
-        My name is <span className="about-me-highlight">Kevin Xie</span>, I'm a <span className="about-me-highlight">senior student</span> at Hunter College and expecting to graduate in the <span className="about-me-highlight">Spring of 2024</span>. I like to spend my free time watching movies and listening to music. 
+        My name is <span className="about-me-highlight">Kevin Xie</span>, I'm a <span className="about-me-highlight">senior student</span> at Hunter College and expecting to graduate in the <span className="about-me-highlight">Spring of 2024</span>. I enjoy learning about new technologies and a passion for web developement.
       </p>
       <div className="skills-container">
         <img className="skill-icon" src='https://cdn-icons-png.flaticon.com/512/732/732212.png' alt="icon"></img>

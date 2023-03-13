@@ -18,7 +18,7 @@ const About = () => {
         <img className="skill-icon" src='https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png' alt="icon"></img>
         <img className="skill-icon" src='https://cdn-icons-png.flaticon.com/512/5968/5968358.png' alt="icon"></img>
         <img className="skill-icon" src='https://cdn-icons-png.flaticon.com/512/5968/5968350.png' alt="icon"></img>
-        <img className="skill-icon" src='https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png' alt="icon"></img>
+        {/* <img className="skill-icon" src='https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png' alt="icon"></img> */}
       </div>
     </div>
     
